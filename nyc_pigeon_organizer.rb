@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
     pigeon.each do |name|
       x.each do |the_name|
         if name == the_name
-          solution_hash[the_name][:gender].push(the_gender.to_s)
+          solution_hash[the_name][:gender] << the_gender.to_s
         end
       end
     end
@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
     pigeon.each do |name|
       x.each do |the_name|
         if name == the_name
-          solution_hash[the_name][:lives].push(location)
+          solution_hash[the_name][:lives] << location
         end
       end
     end
