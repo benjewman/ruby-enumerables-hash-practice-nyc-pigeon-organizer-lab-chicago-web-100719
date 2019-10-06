@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     pigeon.each do |name|
       x.each do |the_name|
         if name == the_name
-          solution_hash[the_name][:color].push(the_color.to_s)
+          solution_hash[the_name][:color] << the_color.to_s
         end
       end
     end
